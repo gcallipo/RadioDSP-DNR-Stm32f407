@@ -1,0 +1,653 @@
+# depslib dependency file v1.0
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\misc.c
+	"misc.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\misc.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\inc\stm32f4xx.h
+	"core_cm4.h"
+	"system_stm32f4xx.h"
+	<stdint.h>
+	"stm32f4xx_conf.h"
+
+1537907868 c:\work\radiodsp_cortexm4\cmsis\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1537907868 c:\work\radiodsp_cortexm4\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+
+1537907868 c:\work\radiodsp_cortexm4\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+
+1537907868 c:\work\radiodsp_cortexm4\cmsis\core_cm4_simd.h
+	<cmsis_iar.h>
+
+1537907867 c:\work\radiodsp_cortexm4\inc\system_stm32f4xx.h
+
+1537907867 c:\work\radiodsp_cortexm4\inc\stm32f4xx_conf.h
+	"stm32f4xx_adc.h"
+	"stm32f4xx_can.h"
+	"stm32f4xx_crc.h"
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_dac.h"
+	"stm32f4xx_dbgmcu.h"
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_dma.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_flash.h"
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_hash.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_iwdg.h"
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_spi.h"
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_usart.h"
+	"stm32f4xx_wwdg.h"
+	"misc.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_adc.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_can.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_crc.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_cryp.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_dac.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_dbgmcu.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_dcmi.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_dma.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_exti.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_flash.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_fsmc.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_hash.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_gpio.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_i2c.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_iwdg.h
+	"stm32f4xx.h"
+
+1537907867 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_pwr.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_rcc.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_rng.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_rtc.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_sdio.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_spi.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_syscfg.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_tim.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_usart.h
+	"stm32f4xx.h"
+
+1537907868 c:\work\radiodsp_cortexm4\spl\inc\stm32f4xx_wwdg.h
+	"stm32f4xx.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_adc.c
+	"stm32f4xx_adc.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_can.c
+	"stm32f4xx_can.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_crc.c
+	"stm32f4xx_crc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_cryp.c
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_cryp_aes.c
+	"stm32f4xx_cryp.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_cryp_des.c
+	"stm32f4xx_cryp.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_cryp_tdes.c
+	"stm32f4xx_cryp.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_dac.c
+	"stm32f4xx_dac.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_dbgmcu.c
+	"stm32f4xx_dbgmcu.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_dcmi.c
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_dma.c
+	"stm32f4xx_dma.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_exti.c
+	"stm32f4xx_exti.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_flash.c
+	"stm32f4xx_flash.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_fsmc.c
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_gpio.c
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_hash.c
+	"stm32f4xx_hash.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_hash_md5.c
+	"stm32f4xx_hash.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_hash_sha1.c
+	"stm32f4xx_hash.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_i2c.c
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_iwdg.c
+	"stm32f4xx_iwdg.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_pwr.c
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_rcc.c
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_rng.c
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_rtc.c
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_sdio.c
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_spi.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_syscfg.c
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_tim.c
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_usart.c
+	"stm32f4xx_usart.h"
+	"stm32f4xx_rcc.h"
+
+1537907868 source:c:\work\radiodsp_cortexm4\spl\src\stm32f4xx_wwdg.c
+	"stm32f4xx_wwdg.h"
+	"stm32f4xx_rcc.h"
+
+1544908742 source:c:\work\radiodsp_cortexm4\src\io_routines.c
+	"io_routines.h"
+
+1544045843 c:\work\radiodsp_cortexm4\inc\io_routines.h
+	"stm32f4xx.h"
+	"arm_math.h"
+
+1537907868 c:\work\radiodsp_cortexm4\cmsis\arm_math.h
+	"core_cm4.h"
+	"core_cm3.h"
+	"core_cm0.h"
+	"ARMCM4.h"
+	"string.h"
+	"math.h"
+
+1537907867 source:c:\work\radiodsp_cortexm4\src\startup_stm32f4xx.s
+
+1537907867 source:c:\work\radiodsp_cortexm4\src\system_stm32f4xx.c
+	"stm32f4xx.h"
+
+1546269028 source:c:\work\radiodsp_cortexm4\src\main.c
+	"stm32f4xx_conf.h"
+	"io_audio.h"
+	"io_display.h"
+	"arm_math.h"
+	"arm_const_structs.h"
+	<math.h>
+	<stdio.h>
+	<complex.h>
+	"defines.h"
+	"tm_stm32f4_delay.h"
+	"tm_stm32f4_disco.h"
+	"tm_stm32f4_spi.h"
+	"tm_stm32f4_ili9341.h"
+	"tm_stm32f4_fonts.h"
+	"tm_stm32f4_rotary_encoder.h"
+	"filter_noise_reduction.h"
+	"filter_audio_segnal.h"
+	"general.h"
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cm3.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cminstr.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\cmsis_armcc.h
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\cmsis_armcc_v6.h
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\cmsis_gcc.h
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cmfunc.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cm0.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cmSimd.h"
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cmsimd.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\arm_math.h
+	"core_cm7.h"
+	"core_cm4.h"
+	"core_cm3.h"
+	"core_cm0.h"
+	"core_cm0plus.h"
+	"string.h"
+	"math.h"
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cm7.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cmSimd.h"
+
+1446540656 c:\work\cmsis-4.5.0\cmsis-4.5.0\cmsis\include\core_cm0plus.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1438781086 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_dma.c
+	"tm_stm32f4_dma.h"
+
+1453109822 c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_dma.h
+	"stm32f4xx.h"
+	"tm_stm32f4_dma.h"
+	"defines.h"
+	"attributes.h"
+
+1541543798 c:\work\radiodsp_cortexm4\src\tm\defines.h
+
+1541454376 c:\work\radiodsp_cortexm4\src\tm\attributes.h
+
+1432460974 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_fonts.c
+	"tm_stm32f4_fonts.h"
+
+1453109822 c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_fonts.h
+	"stm32f4xx.h"
+	"defines.h"
+	"string.h"
+
+1434025009 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_gpio.c
+	"tm_stm32f4_gpio.h"
+
+1453109822 c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_gpio.h
+	"stm32f4xx.h"
+	"stm32f4xx_gpio.h"
+	"defines.h"
+
+1433795736 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_ili9341.c
+	"tm_stm32f4_ili9341.h"
+
+1435850861 c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_ili9341.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_gpio.h"
+	"defines.h"
+	"tm_stm32f4_fonts.h"
+	"tm_stm32f4_gpio.h"
+	"tm_stm32f4_spi.h"
+	"tm_stm32f4_dma.h"
+	"tm_stm32f4_spi_dma.h"
+
+1453109822 c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_spi.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_spi.h"
+	"defines.h"
+	"attributes.h"
+	"tm_stm32f4_gpio.h"
+
+1453109822 c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_spi_dma.h
+	"stm32f4xx.h"
+	"stm32f4xx_dma.h"
+	"defines.h"
+	"tm_stm32f4_dma.h"
+	"tm_stm32f4_spi.h"
+	"stdlib.h"
+
+1439642774 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_spi.c
+	"tm_stm32f4_spi.h"
+
+1438082751 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_spi_dma.c
+	"tm_stm32f4_spi_dma.h"
+
+1545254063 c:\work\radiodsp_cortexm4\src\tm_spi\defines.h
+
+1541547923 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_delay.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"defines.h"
+	"attributes.h"
+	"misc.h"
+	"stm32f4xx_tim.h"
+	"tm_stm32f4_timer_properties.h"
+
+1512398826 c:\work\radiodsp_cortexm4\src\tm_spi\attributes.h
+
+1417109767 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_timer_properties.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_tim.h"
+	"defines.h"
+
+1512819189 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_disco.h
+	"stm32f4xx.h"
+	"defines.h"
+	"tm_stm32f4_gpio.h"
+
+1426398533 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_gpio.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_gpio.h"
+	"defines.h"
+
+1542493616 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_spi.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_spi.h"
+	"defines.h"
+	"attributes.h"
+	"tm_stm32f4_gpio.h"
+
+1426336133 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_ili9341.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_gpio.h"
+	"defines.h"
+	"tm_stm32f4_spi.h"
+	"tm_stm32f4_fonts.h"
+	"tm_stm32f4_gpio.h"
+
+1409134859 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_fonts.h
+	"stm32f4xx.h"
+	"defines.h"
+
+1542490793 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_delay.c
+	"tm_stm32f4_delay.h"
+
+1426331066 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_disco.c
+	"tm_stm32f4_disco.h"
+
+1409134859 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_fonts.c
+	"tm_stm32f4_fonts.h"
+
+1426399215 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_gpio.c
+	"tm_stm32f4_gpio.h"
+
+1542493390 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_ili9341.c
+	"tm_stm32f4_ili9341.h"
+	"tm_stm32f4_fonts.h"
+
+1542490119 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_spi.c
+	"tm_stm32f4_spi.h"
+
+1438870027 source:c:\work\radiodsp_cortexm4\src\tm_enc\tm_stm32f4_exti.c
+	"tm_stm32f4_exti.h"
+
+1453109822 c:\work\radiodsp_cortexm4\src\tm_enc\tm_stm32f4_exti.h
+	"stm32f4xx.h"
+	"misc.h"
+	"defines.h"
+	"attributes.h"
+	"tm_stm32f4_gpio.h"
+
+1427016243 source:c:\work\radiodsp_cortexm4\src\tm_enc\tm_stm32f4_rotary_encoder.c
+	"tm_stm32f4_rotary_encoder.h"
+
+1427058862 c:\work\radiodsp_cortexm4\src\tm_enc\tm_stm32f4_rotary_encoder.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_syscfg.h"
+	"misc.h"
+	"defines.h"
+	"tm_stm32f4_gpio.h"
+	"tm_stm32f4_exti.h"
+
+1546267026 source:c:\work\radiodsp_cortexm4\src\filter_noise_reduction.c
+	"stm32f4xx_conf.h"
+	"io_audio.h"
+	"arm_math.h"
+	"arm_const_structs.h"
+	<math.h>
+	"tm_stm32f4_ili9341.h"
+	"tm_stm32f4_fonts.h"
+	<stdio.h>
+	<complex.h>
+	"filter_noise_reduction.h"
+	"filter_audio_segnal.h"
+
+1546120482 c:\work\radiodsp_cortexm4\inc\filter_noise_reduction.h
+
+1546006247 source:c:\work\radiodsp_cortexm4\src\io_audio.c
+	"io_audio.h"
+
+1546120490 c:\work\radiodsp_cortexm4\inc\io_audio.h
+	"stm32f4xx.h"
+	"arm_math.h"
+	"general.h"
+
+1546268445 source:c:\work\radiodsp_cortexm4\src\io_display.c
+	"io_display.h"
+	"stm32f4xx_conf.h"
+	"defines.h"
+	"tm_stm32f4_delay.h"
+	"tm_stm32f4_disco.h"
+	"tm_stm32f4_spi.h"
+	"tm_stm32f4_ili9341.h"
+	"tm_stm32f4_fonts.h"
+
+1546268665 c:\work\radiodsp_cortexm4\inc\io_display.h
+	"stm32f4xx.h"
+	"arm_math.h"
+	"general.h"
+
+1546264609 source:c:\work\radiodsp_cortexm4\src\filter_audio_segnal.c
+	"stm32f4xx_conf.h"
+	"filter_audio_segnal.h"
+
+1546264609 c:\work\radiodsp_cortexm4\inc\filter_audio_segnal.h
+	"stm32f4xx_conf.h"
+	"arm_math.h"
+	"general.h"
+
+1546267359 c:\work\radiodsp_cortexm4\inc\general.h
+
+1545859316 c:\work\radiodsp_cortexm4\inc\dynamicfilters.h
+
+1545860447 source:c:\work\radiodsp_cortexm4\src\dynamicfilters.c
+	"stm32f4xx_conf.h"
+	"arm_math.h"
+	"general.h"
+	"dynamicFilters.h"
+
+1545901835 c:\work\radiodsp_cortexm4\inc\fftmask.h
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_cm3.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv7.h"
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\cmsis_version.h
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\cmsis_compiler.h
+	<stdint.h>
+	"cmsis_armcc.h"
+	"cmsis_armclang.h"
+	"cmsis_gcc.h"
+	<cmsis_iccarm.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\cmsis_armcc.h
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\cmsis_armclang.h
+	<arm_compat.h>
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\cmsis_gcc.h
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\cmsis_iccarm.h
+	"iccarm_builtin.h"
+	<intrinsics.h>
+
+1545848879 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\mpu_armv7.h
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_cm0.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_cm4.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv7.h"
+
+1545848924 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\dsp\include\arm_math.h
+	"core_cm7.h"
+	"core_cm4.h"
+	"core_cm3.h"
+	"core_cm0.h"
+	"core_cm0plus.h"
+	"core_armv8mbl.h"
+	"core_armv8mml.h"
+	"string.h"
+	"math.h"
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_cm7.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv7.h"
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_cm0plus.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv7.h"
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_armv8mbl.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv8.h"
+
+1545848879 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\mpu_armv8.h
+
+1545848878 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\core\include\core_armv8mml.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv8.h"
+
+1545848924 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\dsp\include\arm_const_structs.h
+	"arm_math.h"
+	"arm_common_tables.h"
+
+1545848924 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\dsp\include\arm_common_tables.h
+	"arm_math.h"
+
