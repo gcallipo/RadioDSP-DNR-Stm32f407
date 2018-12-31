@@ -16,6 +16,23 @@ Four filter elements have been implemented, currently fixed and implemented with
 The display of the spectrum of the signal received in 8kHz and one is also implemented
 secondary display to Waterfall with 3kHz zoom.
 
+Some videos of working prototipe:
+Link1:
+https://youtu.be/YvctFP2eqpk
+
+Link2:
+https://youtu.be/HLHY--rRiw8
+
+Link3:
+https://youtu.be/vCnF3_ZGBCg
+
+Link4:
+https://youtu.be/6EdBPZAnyo4
+
+Link5: 
+https://youtu.be/ByIudrHRiHA
+
+
 The project is work in progress and may be subject to change without notice.
 
   The RadioDSP openSource software is released under the license:
