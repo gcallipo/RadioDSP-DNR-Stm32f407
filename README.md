@@ -11,12 +11,13 @@ Four filter elements have been implemented, currently fixed and implemented with
  * Filter 0: passes through (> 16kHz)
  * Filter 1: low pass for AM (<6kHz)
  * Filter 2: low pass for SSB (<3kHz)
- * Filter 3: Switch bandwidth for CW (500 Hz)
+ * Filter 3: bandpass for CW (500 Hz)
  
 The display of the spectrum of the signal received in 8kHz and one is also implemented
 secondary display to Waterfall with 3kHz zoom.
 
 Some videos of working prototipe:
+
 Link1:
 https://youtu.be/YvctFP2eqpk
 
