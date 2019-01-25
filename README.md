@@ -1,7 +1,7 @@
 # RadioDSP-DNR-Stm32f407
 
  THE RADIO DSP - DNR - PROJECT - Giuseppe Callipo - IK8YFW
-
+ 
 This is an open source project that define a simple platform to make an
 Audio DSP Processor for shortwave radio receiver with Digital Noise Reduction capabilities based on Spectral Subtraction. 
 
@@ -16,6 +16,17 @@ Four filter elements have been implemented, currently fixed and implemented with
 The display of the spectrum of the signal received in 8kHz and one is also implemented
 secondary display to Waterfall with 3kHz zoom.
 
+First Commit 31.12.2018
+*********************************************************************************************************************
+Update 25.01.2019
+First version completed, final functions:
+
+ * DNR with two stage (Spectral Subtraction + Adaptative Lms filters)
+ * BPF / LPF filters (12, 6, 3, 0.5 kHz)
+ * Spectrum and Waterfall signal realtime display
+ * Morse CW decoder
+
+**********************************************************************************************************************
 Some videos of working prototipe:
 
 Link1:
