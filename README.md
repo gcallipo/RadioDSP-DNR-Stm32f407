@@ -25,6 +25,8 @@ First version completed, final functions:
  * BPF / LPF filters (12, 6, 3, 0.5 kHz)
  * Spectrum and Waterfall signal realtime display
  * Morse CW decoder
+ 
+ Added simple schematic (temporary hand writted) and the Help document to upload the firmware. 
 
 **********************************************************************************************************************
 Some videos of working prototipe:
