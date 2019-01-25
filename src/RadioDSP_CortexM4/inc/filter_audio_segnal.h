@@ -22,7 +22,7 @@
 #include "general.h"
 
 #define NUM_TAPS 25
-#define NUM_TAPS_2 121
+#define NUM_TAPS_2 101
 #define NUM_TAPS_3 17
 #define NUM_TAPS_4 17
 
@@ -31,6 +31,23 @@
  *                   VARIABLES
  *
  ********************************************************************/
+
+//******************************************************
+// LMS TEST
+float32_t errOutput[BLOCK_SIZE];
+//static float32_t LMSBufferOut[BLOCK_SIZE];
+
+#define NUMTAPS_LMS            32
+#define MU                     0.95f
+
+float32_t lmsStateF32[NUMTAPS_LMS + BLOCK_SIZE];
+float32_t pCoeffs[NUMTAPS_LMS];
+
+arm_lms_instance_f32  	Sl_LMS;
+
+//******************************************************
+
+
 extern const float32_t firCoeffs32[NUM_TAPS];
 extern const float32_t firCoeffs32_2[NUM_TAPS_2];
 extern const float32_t firCoeffs32_3[NUM_TAPS_3];

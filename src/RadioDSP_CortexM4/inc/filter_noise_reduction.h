@@ -28,6 +28,9 @@
 float32_t FFTBufferOut[BLOCK_SIZE*2];
 float32_t FFTBufferTmp[BLOCK_SIZE*2];
 float32_t FFTBufferMag[BLOCK_SIZE*2];
+float32_t bufferPreOut[BLOCK_SIZE];
+
+
 
 /********************************************************************
  *
@@ -35,6 +38,7 @@ float32_t FFTBufferMag[BLOCK_SIZE*2];
  *
  ********************************************************************/
 void processing_noise_reduction(float* bufferIn, float* bufferOut2);
+void doToneDetect(float32_t level);
 
 
 #ifdef __cplusplus

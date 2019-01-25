@@ -16,6 +16,9 @@
 				<Option projectDeviceOptionsRelation="0" />
 				<Compiler>
 					<Add option="-Wall" />
+					<Add option="-fsingle-precision-constant" />
+					<Add option="-fschedule-insns2" />
+					<Add option="-fschedule-insns" />
 					<Add option="-fdata-sections" />
 					<Add option="-ffunction-sections" />
 					<Add option="-O3" />
@@ -58,6 +61,8 @@
 					<Add option="$heap=0x0000" />
 				</Device>
 				<Compiler>
+					<Add option="-fschedule-insns2" />
+					<Add option="-fschedule-insns" />
 					<Add option="-fdata-sections" />
 					<Add option="-ffunction-sections" />
 					<Add option="-O3" />
@@ -117,6 +122,7 @@
 		<Unit filename="inc\general.h" />
 		<Unit filename="inc\io_audio.h" />
 		<Unit filename="inc\io_display.h" />
+		<Unit filename="inc\morseDecode.h" />
 		<Unit filename="inc\stm32f4xx.h" />
 		<Unit filename="inc\stm32f4xx_conf.h" />
 		<Unit filename="inc\system_stm32f4xx.h" />
@@ -254,6 +260,9 @@
 		<Unit filename="src\main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src\morseDecode.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="src\startup_stm32f4xx.S">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -270,10 +279,6 @@
 		<Unit filename="src\tm_enc\tm_stm32f4_rotary_encoder.h" />
 		<Unit filename="src\tm_spi\attributes.h" />
 		<Unit filename="src\tm_spi\defines.h" />
-		<Unit filename="src\tm_spi\tm_stm32f4_delay.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="src\tm_spi\tm_stm32f4_delay.h" />
 		<Unit filename="src\tm_spi\tm_stm32f4_disco.c">
 			<Option compilerVar="CC" />
 		</Unit>

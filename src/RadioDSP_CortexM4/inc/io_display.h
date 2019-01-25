@@ -35,8 +35,12 @@ extern uint8_t menu_voice;
 extern uint8_t iCmdDnr;
 extern uint8_t iCmdFlt;
 extern uint8_t iCmdScp;
+extern uint8_t iCmdFnc;
 extern int     iLastict;
 
+extern int cw_tone;
+extern int cw_tone_idx;
+extern int cw_tone_val;
 
 /********************************************************************
  *
@@ -51,6 +55,8 @@ void decodeMenuValue();
 void decodeMenuVoice();
 void GPIO_Switch_Setup();
 void fillDisplay(uint8_t signal);
+void showMorseChar(char c);
+
 
 #ifdef __cplusplus
 }

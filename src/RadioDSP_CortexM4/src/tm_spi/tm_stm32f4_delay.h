@@ -243,3 +243,7 @@ void TM_DELAY_DisableDelayTimer(void);
 __weak void TM_DELAY_1msHandler(void);
 
 #endif
+
+///*- Added by ik8yfw Giuseppe Callipo                     */
+///*- This emulate the millis function by arduino platform */
+//uint32_t millis();

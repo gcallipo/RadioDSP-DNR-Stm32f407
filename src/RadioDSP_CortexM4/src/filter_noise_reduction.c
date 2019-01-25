@@ -24,38 +24,49 @@
 #include "filter_noise_reduction.h"
 #include "filter_audio_segnal.h"
 
+#include "morseDecode.h"
+
 /*- working variables */
-int energyChkPeriod_idx = 0;
-float TH_VALUE          = 0.0;
-float POW_VALUE         = 0.0;
-float POW_VALUE_min     = 0.0;
-float POW_VALUE_max     = 0.0;
-float level             = 0;
-int   lasCmdDnr         =0;
+int     energyChkPeriod_idx = 0;
+int     thresholdChkPeriod_idx =0;
+float   TH_VALUE            = 0.0;
+float   POW_VALUE           = 0.0;
+float   POW_VALUE_min       = 0.0;
+float   POW_VALUE_max       = 0.0;
+float   level               = 0;
+int     lasCmdDnr           = 0;
+int     cw_tone             = 0;
+int     cw_tone_idx         = 0;
+int     cw_tone_val         = 0;
+float   mediumValue         = 0;
+float32_t   Threshold_max       = 0.0;
+int     indexVAD            = 200;
+
 
 void processing_noise_reduction(float* bufferIn, float* bufferOut2){
 
     int j =0;
     for (int i =0; i< BLOCK_SIZE; i++)
 	{
-       FFTBufferOut[j] =  bufferIn[i];
+       FFTBufferOut[j] =  bufferIn[i]*0.8;
        j++;
        FFTBufferOut[j]=0;
        j++;
 	}
 
     /* Process the data through the CFFT/CIFFT module */
-    arm_cfft_f32(&arm_cfft_sR_f32_len256, &FFTBufferOut[0], 0, 1);
+    arm_cfft_f32(&arm_cfft_sR_f32_len256, FFTBufferOut, 0, 1);
 
     // Experimental: mult. by the fast convolution mask
     //arm_cmplx_mult_cmplx_f32(&FFTBufferTmp[0], &FLTBufferTmp[0], &FFTBufferOut[0], FFT_SIZE);
 
     /* Process the data through the Complex Magniture Module for calculating the magnitude at each bin */
-    arm_cmplx_mag_f32(&FFTBufferOut[0], &FFTBufferMag[0], FFT_SIZE);
+    arm_cmplx_mag_f32(FFTBufferOut, FFTBufferMag, FFT_SIZE);
 
-    /* Evaluate Noise */
+    /*- Voice Activity Detector */
+    /* Evaluate Noise  */
     energyChkPeriod_idx++;
-    if (energyChkPeriod_idx>=200){
+    if (energyChkPeriod_idx>=indexVAD){
         POW_VALUE_max = 0;
         energyChkPeriod_idx=0;
     }
@@ -92,7 +103,7 @@ void processing_noise_reduction(float* bufferIn, float* bufferOut2){
 
         //*******************************
 
-    float mediumValue = (TH_VALUE_new/(high-low)); // MEDIUM
+    mediumValue = (TH_VALUE_new/(high-low)); // MEDIUM
     float TH_VALUE_low = (0.8+(level/10)) * mediumValue;
     TH_VALUE = level*mediumValue*(1.0-(POW_VALUE_max*10));
     if (TH_VALUE<TH_VALUE_low){
@@ -121,7 +132,7 @@ void processing_noise_reduction(float* bufferIn, float* bufferOut2){
             FFTBufferMag[j] =  FFTBufferMag[j]- TH_VALUE;
 	    }
 
-         /*- Copy values for plotting - after NR for spectrum */
+         /*- Copy values for plotting - after NR for waterfall */
 	     if (iCmdScp==1 && semaphorePlot == 0){
             if (j<FFT_SIZE/2){
                 FFTBufferMagPlot[j] = FFTBufferMag[j]*50;
@@ -138,7 +149,7 @@ void processing_noise_reduction(float* bufferIn, float* bufferOut2){
 
       float32_t r1 = FFTBufferOut[s]; float32_t i1 = FFTBufferOut[k];
       complex float z= r1 + i1*I;
-      float32_t phi =  cargf(z);
+      float32_t phi = cargf(z);
       float32_t r2 = FFTBufferMag[j]*arm_cos_f32(phi);
       float32_t i2 = FFTBufferMag[j]*arm_sin_f32(phi);
 
@@ -153,23 +164,66 @@ void processing_noise_reduction(float* bufferIn, float* bufferOut2){
    if (semaphorePlot == 0){
  	  FFTBufferMagPlot[0] = 0; // CUT DC Value ...
       /* Calculates maxValue and returns corresponding value */
-	  arm_max_f32(&FFTBufferMagPlot[0], FFT_SIZE/2, &maxValue, &maxIndex);
+	  arm_max_f32(FFTBufferMagPlot, FFT_SIZE/2, &maxValue, &maxIndex);
+
+	  /* detect cw tone */
+	  if (iCmdFnc == 1 ) {
+	          thresholdChkPeriod_idx ++;
+	          if (thresholdChkPeriod_idx>=indexVAD*100){
+                 Threshold_max = 0.0;
+                 thresholdChkPeriod_idx =0;
+              }
+              if (maxValue>Threshold_max && (CW_FFT_MIN_BIN<maxIndex && maxIndex<CW_FFT_MAX_BIN)){
+                 Threshold_max = maxValue;
+              }
+              float32_t level = 0.0;
+              if (Threshold_max<12){
+                    doToneDetect(Threshold_max/2);
+              }else{
+                    doToneDetect(Threshold_max/4);
+              }
+
+        }
     }
 
     // Compute the inverse FFT ...
-    arm_cfft_f32(&arm_cfft_sR_f32_len256, &FFTBufferOut[0],1,1);
+    arm_cfft_f32(&arm_cfft_sR_f32_len256, FFTBufferOut,1,1);
 
+    // Rebuild and clean the signal if need
     j =0;
     for (int i =0; i< BLOCK_SIZE; i++)
 	{
-       bufferOut2[i] =  FFTBufferOut[j];
+      if (level > 2)
+           bufferPreOut[i] =  FFTBufferOut[j];
+      else bufferOut2[i] =  FFTBufferOut[j];
+
        j++; j++;
 	}
-
-	 /*- Experimental Smooting output */
-    // smootingFilter(&smotStatusBuffer[0], &bufferPreOut[0], &bufferOut2[0], 3,BLOCK_SIZE);
+    /*- DNR second stage LMS filter
+    *   Over the Level 4 (on display) the noise derived by spectrum subctraction is strong
+    *   (it is like an metallic effect on voice),
+    *   then we can add a second stage, LMS filter, that works well when the difference beetwen the two
+    *   input signals are wide. The overall effect is a fidelity on voice reproduction also when
+    *   the noise reduction level is high.
+    */
+    // After level 4 activate the second stage.
+    if (level > 2)  arm_lms_f32(&Sl_LMS,&bufferPreOut[0],&bufferIn[0], &bufferOut2[0], &errOutput[0],BLOCK_SIZE);
 
 }
+
+void doToneDetect( float32_t level){
+
+
+	  cw_tone_idx= maxIndex;
+	  if (CW_FFT_MIN_BIN<maxIndex && maxIndex<CW_FFT_MAX_BIN && maxValue>level) {    // mediumValue*25
+	       // tone detect
+	       morseKeyDown();
+	  }
+       else{
+           // no tone
+           morseKeyUp();
+       }
+ }
 
 /**************************************END OF FILE****/
 

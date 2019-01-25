@@ -39,6 +39,8 @@
 extern int ict;
 extern uint8_t iCmdDnr;
 extern uint8_t iCmdScp;
+extern uint8_t iCmdFnc;
+
 static int semaphorePlot = 0;
 
 float32_t maxValue;				            /* Max FFT value is stored here */

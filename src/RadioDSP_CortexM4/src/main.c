@@ -51,9 +51,13 @@
 
 #include "tm_stm32f4_rotary_encoder.h"
 
+#include "morseDecode.h"
 #include "filter_noise_reduction.h"
 #include "filter_audio_segnal.h"
+
 #include "general.h"
+
+//#include "tm_stm32f4_timer_properties.h"
 
 /* Rotary encoder data */
 static TM_RE_t RE1_Data;
@@ -70,9 +74,26 @@ uint8_t        menu_voice=0;
 uint8_t        iCmdDnr=0;
 uint8_t        iCmdFlt=0;
 uint8_t        iCmdScp=0;
+uint8_t        iCmdFnc=0;
 uint8_t        rowCt=0;
+uint8_t        slowCt =4;
 
 arm_fir_instance_f32 S,S2, S3,S4;
+volatile uint32_t ticks;
+
+/* return the system clock as milliseconds */
+uint32_t millis(void) {
+  return ticks;
+}
+
+/*- Time milliseconds timer handler */
+void TIM5_IRQHandler()
+{
+    if (TIM_GetITStatus(TIM5, TIM_IT_Update) != RESET)
+    {
+        ticks++;
+    }
+}
 
 int main(void)
 {
@@ -84,6 +105,8 @@ int main(void)
     arm_fir_init_f32(&S2, NUM_TAPS_2, (float32_t *)&firCoeffs32_2[0], &firStateF32_2[0], BLOCK_SIZE);
     arm_fir_init_f32(&S3, NUM_TAPS_3, (float32_t *)&firCoeffs32_3[0], &firStateF32_3[0], BLOCK_SIZE);
     arm_fir_init_f32(&S4, NUM_TAPS_4, (float32_t *)&firCoeffs32_4[0], &firStateF32_4[0], BLOCK_SIZE);
+
+    arm_lms_init_f32	(&Sl_LMS,NUMTAPS_LMS,pCoeffs,lmsStateF32,MU,BLOCK_SIZE);
 
     /*- Initialize ADC and DAC */
     ADC1_CH6_DMA_Config(BLOCK_SIZE);
@@ -102,6 +125,8 @@ int main(void)
 
 	/*- Start services timer */
     TIM3_Config();
+
+    TIM5_Config();
 
     /*- wait forever ...*/
 	while(1)
@@ -123,8 +148,6 @@ void TM_EXTI_Handler(uint16_t GPIO_Pin) {
 /*- IRQ for incoming samples */
 void DMA2_Stream0_IRQHandler()
 {
-     /*- cleat irq */
-    DMA_ClearFlag(DMA2_Stream0, DMA_IT_TC);
 
 	iCurBuffIdx=!iCurBuffIdx;
 
@@ -132,17 +155,17 @@ void DMA2_Stream0_IRQHandler()
 	arm_q15_to_float(&ADC_ConvertedValue[iCurBuffIdx][0],&BufferIn[0],BLOCK_SIZE);
 
      if (iCmdFlt==3){
-      //CW - NARROW
+      //CW -   NARROW
        arm_fir_f32(&S2,(float *)&BufferIn[0],(float *)&Buffer1[0],BLOCK_SIZE);
      }else if (iCmdFlt==2){
 	   //SSB - MEDIUM
         arm_fir_f32(&S,(float *)&BufferIn[0],(float *)&Buffer1[0],BLOCK_SIZE);
      }else if (iCmdFlt==1){
-	   //AM - MEDIUM
+	   //AM -  WIDE
         arm_fir_f32(&S4,(float *)&BufferIn[0],(float *)&Buffer1[0],BLOCK_SIZE);
      }
      else if (iCmdFlt==0){
-       //AM - WIDE
+       //AM -  PASSTROUGH - OFF
        arm_fir_f32(&S3,(float *)&BufferIn[0],(float *)&Buffer1[0],BLOCK_SIZE);
      }
 
@@ -152,6 +175,8 @@ void DMA2_Stream0_IRQHandler()
     /*- back converter from float to dac */
     arm_float_to_q15(&BufferOut[0],&OutputBuffer[iCurBuffIdx][0],BLOCK_SIZE);
 
+  /*- cleat irq */
+    DMA_ClearFlag(DMA2_Stream0, DMA_IT_TC);
 
 }
 
@@ -212,18 +237,26 @@ void waterfallScope(){
 {
     if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
     {
+        TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
+
         /*- Lock the semaphore for plotting ... */
         semaphorePlot = 1;
 
         /* Display data on LCD */
         if (iCmdScp==0){
             spectrumScope();
-        }else{
+        }else if (iCmdScp==1){
             waterfallScope();
         }
 
         /*- UnLock the semaphore after plotting ... */
 		semaphorePlot = 0;
+
+		if(slowCt>0){
+		    slowCt--;
+            return;
+		}
+        slowCt = 2;
 
        /* Get new rotation */
 		TM_RE_Get(&RE1_Data);
@@ -233,8 +266,6 @@ void waterfallScope(){
         switchPush = GPIO_ReadInputDataBit(GPIOE, GPIO_Pin_0);
         if (switchPush==0) decodeMenuVoice();
         if (ict!=iLastict) decodeMenuValue();
-
-        TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
     }
 }
 

@@ -161,7 +161,7 @@ void DAC1_Config(uint32_t block)
   DAC_InitStructure.DAC_LFSRUnmask_TriangleAmplitude = DAC_TriangleAmplitude_2047;
 
   DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
-  //DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Disable;
+ // DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Disable;
   DAC_Init(DAC_Channel_1, &DAC_InitStructure);
 
   DMA_DeInit(DMA1_Stream5);

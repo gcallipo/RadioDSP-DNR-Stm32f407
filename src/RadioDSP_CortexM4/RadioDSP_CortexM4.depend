@@ -260,7 +260,7 @@
 1537907867 source:c:\work\radiodsp_cortexm4\src\system_stm32f4xx.c
 	"stm32f4xx.h"
 
-1546269028 source:c:\work\radiodsp_cortexm4\src\main.c
+1548449301 source:c:\work\radiodsp_cortexm4\src\main.c
 	"stm32f4xx_conf.h"
 	"io_audio.h"
 	"io_display.h"
@@ -276,6 +276,7 @@
 	"tm_stm32f4_ili9341.h"
 	"tm_stm32f4_fonts.h"
 	"tm_stm32f4_rotary_encoder.h"
+	"morseDecode.h"
 	"filter_noise_reduction.h"
 	"filter_audio_segnal.h"
 	"general.h"
@@ -412,9 +413,9 @@
 1438082751 source:c:\work\radiodsp_cortexm4\src\tm\tm_stm32f4_spi_dma.c
 	"tm_stm32f4_spi_dma.h"
 
-1545254063 c:\work\radiodsp_cortexm4\src\tm_spi\defines.h
+1546900566 c:\work\radiodsp_cortexm4\src\tm_spi\defines.h
 
-1541547923 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_delay.h
+1546896124 c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_delay.h
 	"stm32f4xx.h"
 	"stm32f4xx_rcc.h"
 	"defines.h"
@@ -464,7 +465,7 @@
 	"stm32f4xx.h"
 	"defines.h"
 
-1542490793 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_delay.c
+1546895956 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_delay.c
 	"tm_stm32f4_delay.h"
 
 1426331066 source:c:\work\radiodsp_cortexm4\src\tm_spi\tm_stm32f4_disco.c
@@ -507,7 +508,7 @@
 	"tm_stm32f4_gpio.h"
 	"tm_stm32f4_exti.h"
 
-1546267026 source:c:\work\radiodsp_cortexm4\src\filter_noise_reduction.c
+1548449747 source:c:\work\radiodsp_cortexm4\src\filter_noise_reduction.c
 	"stm32f4xx_conf.h"
 	"io_audio.h"
 	"arm_math.h"
@@ -519,18 +520,19 @@
 	<complex.h>
 	"filter_noise_reduction.h"
 	"filter_audio_segnal.h"
+	"morseDecode.h"
 
-1546120482 c:\work\radiodsp_cortexm4\inc\filter_noise_reduction.h
+1548449786 c:\work\radiodsp_cortexm4\inc\filter_noise_reduction.h
 
-1546006247 source:c:\work\radiodsp_cortexm4\src\io_audio.c
+1546722282 source:c:\work\radiodsp_cortexm4\src\io_audio.c
 	"io_audio.h"
 
-1546120490 c:\work\radiodsp_cortexm4\inc\io_audio.h
+1547849090 c:\work\radiodsp_cortexm4\inc\io_audio.h
 	"stm32f4xx.h"
 	"arm_math.h"
 	"general.h"
 
-1546268445 source:c:\work\radiodsp_cortexm4\src\io_display.c
+1548449220 source:c:\work\radiodsp_cortexm4\src\io_display.c
 	"io_display.h"
 	"stm32f4xx_conf.h"
 	"defines.h"
@@ -540,21 +542,21 @@
 	"tm_stm32f4_ili9341.h"
 	"tm_stm32f4_fonts.h"
 
-1546268665 c:\work\radiodsp_cortexm4\inc\io_display.h
+1547847520 c:\work\radiodsp_cortexm4\inc\io_display.h
 	"stm32f4xx.h"
 	"arm_math.h"
 	"general.h"
 
-1546264609 source:c:\work\radiodsp_cortexm4\src\filter_audio_segnal.c
+1548003885 source:c:\work\radiodsp_cortexm4\src\filter_audio_segnal.c
 	"stm32f4xx_conf.h"
 	"filter_audio_segnal.h"
 
-1546264609 c:\work\radiodsp_cortexm4\inc\filter_audio_segnal.h
+1548001655 c:\work\radiodsp_cortexm4\inc\filter_audio_segnal.h
 	"stm32f4xx_conf.h"
 	"arm_math.h"
 	"general.h"
 
-1546267359 c:\work\radiodsp_cortexm4\inc\general.h
+1548000322 c:\work\radiodsp_cortexm4\inc\general.h
 
 1545859316 c:\work\radiodsp_cortexm4\inc\dynamicfilters.h
 
@@ -650,4 +652,20 @@
 
 1545848924 c:\work\cmsis_5-5.4.0\cmsis_5-5.4.0\cmsis\dsp\include\arm_common_tables.h
 	"arm_math.h"
+
+1548449946 c:\work\radiodsp_cortexm4\inc\morsedecode.h
+
+1548449573 source:c:\work\radiodsp_cortexm4\src\morsedecode.c
+	"stm32f4xx_conf.h"
+	"morseDecode.h"
+	"io_display.h"
+
+1426443584 source:c:\work\radiodsp_cortexm4\src\tm_stm32f4_timer_properties.c
+	"tm_stm32f4_timer_properties.h"
+
+1453109823 c:\work\radiodsp_cortexm4\inc\tm_stm32f4_timer_properties.h
+	"stm32f4xx.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_tim.h"
+	"defines.h"
 

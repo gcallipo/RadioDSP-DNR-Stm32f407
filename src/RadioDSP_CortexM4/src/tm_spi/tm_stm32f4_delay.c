@@ -28,22 +28,26 @@ volatile uint32_t mult;
 void TM_DELAY_INT_InitTIM(void);
 #endif
 
-#if defined(TM_DELAY_TIM)
-void TM_DELAY_TIM_IRQ_HANDLER(void) {
-	TIM_ClearITPendingBit(TM_DELAY_TIM, TIM_IT_Update);
-#elif defined(KEIL_IDE)
-void TimingDelay_Decrement(void) {
-#else
-void SysTick_Handler(void) {
-#endif
-	TM_Time++;
-	if (TM_Time2 != 0x00) {
-		TM_Time2--;
-	}
+//#if defined(TM_DELAY_TIM)
+//void TM_DELAY_TIM_IRQ_HANDLER(void) {
+//	TIM_ClearITPendingBit(TM_DELAY_TIM, TIM_IT_Update);
+//#elif defined(KEIL_IDE)
+//void TimingDelay_Decrement(void) {
+//#else
+//void SysTick_Handler(void) {
+//#endif
+//	TM_Time++;
+//	if (TM_Time2 != 0x00) {
+//		TM_Time2--;
+//	}
+//
+//	/* Call user function */
+//	TM_DELAY_1msHandler();
+//}
 
-	/* Call user function */
-	TM_DELAY_1msHandler();
-}
+//uint32_t millis(){
+//    return TM_Time;
+//}
 
 void TM_DELAY_Init(void) {
 	/* If already initialized */

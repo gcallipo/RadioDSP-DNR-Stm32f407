@@ -28,5 +28,5 @@ obj\debug\src\main.o: src\main.c inc/stm32f4xx_conf.h \
  src\tm_spi/tm_stm32f4_ili9341.h src\tm_spi/tm_stm32f4_spi.h \
  src\tm_spi/tm_stm32f4_fonts.h src\tm_spi/tm_stm32f4_fonts.h \
  src\tm_enc/tm_stm32f4_rotary_encoder.h src\tm_spi/tm_stm32f4_gpio.h \
- src\tm_enc/tm_stm32f4_exti.h src\tm_spi/attributes.h \
+ src\tm_enc/tm_stm32f4_exti.h src\tm_spi/attributes.h inc/morseDecode.h \
  inc/filter_noise_reduction.h inc/filter_audio_segnal.h inc/general.h

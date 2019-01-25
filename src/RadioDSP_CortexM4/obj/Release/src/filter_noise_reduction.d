@@ -26,4 +26,4 @@ obj\release\src\filter_noise_reduction.o: src\filter_noise_reduction.c \
  src\tm_spi/tm_stm32f4_spi.h src\tm_spi/attributes.h \
  src\tm_spi/tm_stm32f4_gpio.h src\tm_spi/tm_stm32f4_fonts.h \
  src\tm_spi/tm_stm32f4_fonts.h inc/filter_noise_reduction.h \
- inc/filter_audio_segnal.h
+ inc/filter_audio_segnal.h inc/morseDecode.h

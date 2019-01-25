@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <EmBitz_layout_file>
 	<ActiveTarget name="Release" />
-	<File name="..\CMSIS_5-5.4.0\CMSIS_5-5.4.0\CMSIS\Core\Include\core_cm4.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\CMSIS_5-5.4.0\CMSIS_5-5.4.0\CMSIS\Core\Include\core_cm4.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="3736" topLine="96" />
 		</Cursor>
@@ -16,39 +16,59 @@
 			<Cursor1 position="114273" topLine="3702" />
 		</Cursor>
 	</File>
-	<File name="inc\filter_audio_segnal.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\filter_audio_segnal.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1572" topLine="25" />
+			<Cursor1 position="716" topLine="14" />
 		</Cursor>
 	</File>
-	<File name="inc\filter_noise_reduction.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\filter_noise_reduction.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="869" topLine="7" />
+			<Cursor1 position="1322" topLine="32" />
 		</Cursor>
 	</File>
-	<File name="inc\general.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\general.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="718" topLine="15" />
+			<Cursor1 position="1257" topLine="32" />
 		</Cursor>
 	</File>
-	<File name="inc\io_audio.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\io_audio.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1640" topLine="29" />
+			<Cursor1 position="1115" topLine="30" />
 		</Cursor>
 	</File>
-	<File name="inc\io_display.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\io_display.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1768" topLine="35" />
+			<Cursor1 position="991" topLine="27" />
 		</Cursor>
 	</File>
-	<File name="inc\stm32f4xx.h" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\morseDecode.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="92933" topLine="42" />
+			<Cursor1 position="520" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="inc\stm32f4xx.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="92933" topLine="490" />
+		</Cursor>
+	</File>
+	<File name="inc\stm32f4xx_conf.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="60" />
+		</Cursor>
+	</File>
+	<File name="inc\tm_stm32f4_timer_properties.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2041" topLine="46" />
 		</Cursor>
 	</File>
 	<File name="SPL\inc\stm32f4xx_gpio.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="16472" topLine="364" />
+		</Cursor>
+	</File>
+	<File name="SPL\inc\stm32f4xx_rcc.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1839" topLine="76" />
 		</Cursor>
 	</File>
 	<File name="SPL\inc\stm32f4xx_spi.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -61,42 +81,52 @@
 			<Cursor1 position="34015" topLine="767" />
 		</Cursor>
 	</File>
+	<File name="SPL\src\stm32f4xx_rcc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13243" topLine="290" />
+		</Cursor>
+	</File>
 	<File name="SPL\src\stm32f4xx_tim.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="16627" topLine="411" />
 		</Cursor>
 	</File>
-	<File name="src\filter_audio_segnal.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="src\filter_audio_segnal.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3237" topLine="189" />
+			<Cursor1 position="2773" topLine="166" />
 		</Cursor>
 	</File>
-	<File name="src\filter_noise_reduction.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\filter_noise_reduction.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4819" topLine="124" />
+			<Cursor1 position="5587" topLine="166" />
 		</Cursor>
 	</File>
-	<File name="src\io_audio.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\io_audio.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="496" topLine="172" />
+			<Cursor1 position="8310" topLine="102" />
 		</Cursor>
 	</File>
-	<File name="src\io_display.c" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\io_display.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4449" topLine="84" />
+			<Cursor1 position="6312" topLine="35" />
 		</Cursor>
 	</File>
-	<File name="src\main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="src\main.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6138" topLine="197" />
+			<Cursor1 position="3920" topLine="53" />
 		</Cursor>
 	</File>
-	<File name="src\startup_stm32f4xx.S" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\morseDecode.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9439" topLine="181" />
+			<Cursor1 position="3070" topLine="61" />
 		</Cursor>
 	</File>
-	<File name="src\system_stm32f4xx.c" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\startup_stm32f4xx.S" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9439" topLine="187" />
+		</Cursor>
+	</File>
+	<File name="src\system_stm32f4xx.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="10382" topLine="255" />
 		</Cursor>
@@ -108,32 +138,22 @@
 	</File>
 	<File name="src\tm_spi\attributes.h" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="18" />
+			<Cursor1 position="0" topLine="14" />
 		</Cursor>
 	</File>
-	<File name="src\tm_spi\defines.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\tm_spi\defines.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2553" topLine="45" />
-		</Cursor>
-	</File>
-	<File name="src\tm_spi\tm_stm32f4_delay.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1492" topLine="41" />
-		</Cursor>
-	</File>
-	<File name="src\tm_spi\tm_stm32f4_delay.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6011" topLine="219" />
+			<Cursor1 position="2798" topLine="31" />
 		</Cursor>
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_disco.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="30" />
+			<Cursor1 position="0" topLine="3" />
 		</Cursor>
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_disco.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4238" topLine="108" />
+			<Cursor1 position="4238" topLine="141" />
 		</Cursor>
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_fonts.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -148,27 +168,32 @@
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_gpio.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10073" topLine="331" />
+			<Cursor1 position="10073" topLine="57" />
 		</Cursor>
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_ili9341.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7334" topLine="0" />
+			<Cursor1 position="7334" topLine="21" />
 		</Cursor>
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_ili9341.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4771" topLine="131" />
+			<Cursor1 position="4771" topLine="89" />
 		</Cursor>
 	</File>
 	<File name="src\tm_spi\tm_stm32f4_spi.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="14362" topLine="489" />
+			<Cursor1 position="14362" topLine="18" />
 		</Cursor>
 	</File>
-	<File name="src\tm_spi\tm_stm32f4_spi.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\tm_spi\tm_stm32f4_spi.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5870" topLine="206" />
+			<Cursor1 position="5620" topLine="197" />
+		</Cursor>
+	</File>
+	<File name="src\tm_stm32f4_timer_properties.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4792" topLine="167" />
 		</Cursor>
 	</File>
 </EmBitz_layout_file>
