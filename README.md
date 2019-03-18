@@ -31,20 +31,28 @@ First version completed, final functions:
 **********************************************************************************************************************
 Some videos of working prototipe:
 
-Link1:
+Link1:(40 mt ssb)
 https://youtu.be/YvctFP2eqpk
 
-Link2:
+Link2:(40 mt ssb)
 https://youtu.be/HLHY--rRiw8
 
-Link3:
+Link3:(40 mt AM broadcasting)
 https://youtu.be/vCnF3_ZGBCg
 
-Link4:
+Link4:(20 mt ssb)
 https://youtu.be/6EdBPZAnyo4
 
-Link5: 
+Link5:(waterfall)
 https://youtu.be/ByIudrHRiHA
+
+Link6: (Radio china int. AM)
+https://youtu.be/mXqoe8ZU1xU
+
+Link7: (Test decoder CW)
+https://youtu.be/tha96osoO_M
+
+
 
 
 The project is work in progress and may be subject to change without notice.
