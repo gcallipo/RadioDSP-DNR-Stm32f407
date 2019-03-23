@@ -52,7 +52,12 @@ https://youtu.be/mXqoe8ZU1xU
 Link7: (Test decoder CW)
 https://youtu.be/tha96osoO_M
 
+************************************************************************************************************
+Update 23.03.2019
+A box for this project could be download from thingieverse as 3d Printed project.
+Look here: https://www.thingiverse.com/thing:3506317
 
+************************************************************************************************************
 
 
 The project is work in progress and may be subject to change without notice.
